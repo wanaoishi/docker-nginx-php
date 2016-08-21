@@ -16,7 +16,7 @@ ADD container-files/etc/yum.repos.d/* /etc/yum.repos.d/
 RUN \
   yum update -y && \
   `# Install some basic web-related tools...` \
-  yum install -y wget patch tar bzip2 unzip openssh-clients MariaDB-client && \
+  yum install -y wget patch tar bzip2 unzip openssh-clients MariaDB-client postfix && \
 
   `# Install PHP 7.0 from Remi YUM repository...` \
   rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
